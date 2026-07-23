@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nama Toko | Produk Berkualitas</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">
+            TOKO<span>DIKI SEPANYOL</span>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#produk">Produk</a>
+            <a href="#tentang">Tentang</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+
+       <button class="cart-btn" onclick="openCart()">
+    🛒 Keranjang
+    <span id="cart-count">0</span>
+</button>
+
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+
+        <div class="hero-text">
+
+            <p class="subtitle">
+                PRODUK PILIHAN TERBAIK
+            </p>
+
+            <h1>
+                Temukan Produk
+                <span>Favoritmu</span>
+            </h1>
+
+            <p class="description">
+                Dapatkan produk berkualitas dengan harga terbaik.
+                Belanja mudah, cepat, dan aman hanya di TOKOKITA.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#produk" class="btn-primary">
+                    🛍️ Belanja Sekarang
+                </a>
+
+                <a href="#tentang" class="btn-secondary">
+                    Pelajari Lebih Lanjut
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-image">
+
+            <div class="product-card">
+
+                <div class="product-icon">
+                    🛍️
+                </div>
+
+                <h3>Produk Premium</h3>
+
+                <p>
+                    Kualitas terbaik untuk kamu
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRODUK -->
+    <section class="products" id="produk">
+
+        <div class="section-title">
+
+            <p>PRODUK TERBAIK</p>
+
+            <h2>
+                Pilihan Produk Kami
+            </h2>
+
+            <span>
+                Produk pilihan berkualitas dengan harga terbaik.
+            </span>
+
+        </div>
+
+
+        <div class="product-grid">
+
+            <!-- PRODUK 1 -->
+            <div class="product">
+
+            <div class="product-image">
+
+    <img
+        src="image/produk3.jpg.jpg"
+        alt="Produk Premium 1"
+    >
+
+</div>
+
+<div class="product-info">
+
+    <div class="rating">
+        ⭐⭐⭐⭐⭐
+        <span>(25 ulasan)</span>
+    </div>
+
+    <h3>
+        Produk Premium 1
+    </h3>
+
+    <p>
+        Produk berkualitas tinggi dengan desain
+        modern dan nyaman digunakan sehari-hari.
+    </p>
+
+    <div class="old-price">
+        Rp 129.000
+    </div>
+
+    <div class="price">
+        Rp 99.000
+    </div>
+
+    <div class="stock">
+        🟢 Stok tersedia
+    </div>
+
+    <button
+        class="detail-btn"
+        onclick="openProductDetail()">
+
+        👀 Lihat Detail
+
+    </button>
+
+</div>
+
+            </div>
+
+
+            <!-- PRODUK 2 -->
+            <div class="product">
+
+               <div class="product-image">
+
+    <img
+        src="image/produk2.jpg"
+        alt="Produk Premium 1"
+    >
+
+</div>
+
+<div class="product-info">
+
+    <div class="rating">
+        ⭐⭐⭐⭐⭐
+        <span>(25 ulasan)</span>
+    </div>
+
+    <h3>
+        Produk Premium 2
+    </h3>
+
+    <p>
+        Produk berkualitas tinggi dengan desain
+        modern dan nyaman digunakan sehari-hari.
+    </p>
+
+    <div class="old-price">
+        Rp 300.000
+    </div>
+
+    <div class="price">
+        Rp 129.000
+    </div>
+
+    <div class="stock">
+        🟢 Stok tersedia
+    </div>
+
+    <button
+        class="detail-btn"
+        onclick="openProductDetail()">
+
+        👀 Lihat Detail
+
+    </button>
+
+</div>
+
+            </div>
+
+
+            <!-- PRODUK 3 -->
+            <div class="product">
+
+    <div class="product-image">
+        <img
+            src="image/produk1.jpg"
+            alt="Produk Premium 3"
+        >
+    </div>
+
+    <div class="product-info">
+
+        <div class="rating">
+            ⭐⭐⭐⭐⭐
+            <span>(32 ulasan)</span>
+        </div>
+
+        <h3>
+            Produk Premium 3
+        </h3>
+
+        <p>
+            Produk premium dengan desain elegan
+            dan kualitas terbaik.
+        </p>
+
+        <div class="old-price">
+            Rp 249.000
+        </div>
+
+        <div class="price">
+            Rp 199.000
+        </div>
+
+        <div class="stock">
+            🟢 Stok tersedia
+        </div>
+
+        <button
+            class="detail-btn"
+            onclick="openProductDetail(3)">
+
+            👀 Lihat Detail
+
+        </button>
+
+    </div>
+
+</div>
+        </div>
+
+    </section>
+
+
+    <!-- TENTANG -->
+    <section class="about" id="tentang">
+
+        <div>
+
+            <p class="subtitle">
+                KENAPA TOKOKITA?
+            </p>
+
+            <h2>
+                Belanja Mudah,
+                Aman dan Nyaman
+            </h2>
+
+            <p>
+                Kami menyediakan produk pilihan dengan kualitas
+                terbaik dan pelayanan yang cepat untuk pelanggan.
+            </p>
+
+        </div>
+
+
+        <div class="features">
+
+            <div>
+                <h3>🚚</h3>
+                <p>Pengiriman Cepat</p>
+            </div>
+
+            <div>
+                <h3>🔒</h3>
+                <p>Transaksi Aman</p>
+            </div>
+
+            <div>
+                <h3>⭐</h3>
+                <p>Produk Berkualitas</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+    <section class="cta">
+
+        <h2>
+            Siap Belanja Produk Favoritmu?
+        </h2>
+
+        <p>
+            Jangan sampai kehabisan. Dapatkan produk terbaik sekarang.
+        </p>
+
+        <a href="#produk" class="btn-primary">
+            Mulai Belanja
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer id="kontak">
+
+        <h3>
+            TOKOKITA
+        </h3>
+
+        <p>
+            © 2026 TOKOKITA. Semua hak dilindungi.
+        </p>
+
+    </footer>
+
+    <!-- CART SIDEBAR -->
+
+<div class="cart-overlay" id="cart-overlay" onclick="closeCart()"></div>
+
+<div class="cart-sidebar" id="cart-sidebar">
+
+    <div class="cart-header">
+
+        <h2>🛒 Keranjang</h2>
+
+        <button onclick="closeCart()">
+            ✕
+        </button>
+
+    </div>
+
+
+    <div id="cart-items">
+
+        <p class="empty-cart">
+            Keranjang masih kosong.
+        </p>
+
+    </div>
+
+
+    <div class="cart-footer">
+
+        <div class="cart-total">
+
+            <span>Total</span>
+
+            <strong id="cart-total">
+                Rp 0
+            </strong>
+
+        </div>
+
+        <button class="checkout-btn" 
+         onclick="openCheckout()">
+            Checkout
+        </button>
+
+    </div>
+
+</div>
+
+<!-- CHECKOUT PAGE -->
+
+<div class="checkout-overlay" id="checkout-overlay">
+
+    <div class="checkout-box">
+
+        <div class="checkout-header">
+
+            <h2>Checkout</h2>
+
+            <button onclick="closeCheckout()">
+                ✕
+            </button>
+
+        </div>
+
+
+        <p class="checkout-description">
+            Silakan isi data pesanan kamu.
+        </p>
+
+
+        <!-- FORM CHECKOUT =============================================================================== -->
+
+        <form id="checkout-form">
+
+            <label>
+                Nama Lengkap
+            </label>
+
+            <input
+                type="text"
+                id="customer-name"
+                placeholder="Masukkan nama kamu"
+                required
+            >
+
+
+            <label>
+                Nomor WhatsApp
+            </label>
+
+            <input
+                type="tel"
+                id="customer-phone"
+                placeholder="Contoh: 08123456789"
+                required
+            >
+
+
+            <label>
+                Alamat Pengiriman
+            </label>
+
+            <textarea
+                id="customer-address"
+                placeholder="Masukkan alamat lengkap"
+                required
+            ></textarea>
+
+
+            <label>
+                Catatan Pesanan
+            </label>
+
+            <textarea
+                id="customer-note"
+                placeholder="Contoh: Warna hitam, ukuran L"
+            ></textarea>
+
+
+            <div class="checkout-summary">
+
+                <span>
+                    Total Pesanan
+                </span>
+
+                <strong id="checkout-total">
+                    Rp 0
+                </strong>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="whatsapp-btn">
+
+                💬 Pesan Sekarang via WhatsApp
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+<!-- PRODUCT DETAIL MODAL -->
+
+<div
+    class="product-modal"
+    id="product-modal">
+
+    <div class="product-detail">
+
+        <button
+            class="close-product"
+            onclick="closeProductDetail()">
+
+            ✕
+
+        </button>
+
+
+        <!-- FOTO PRODUK -->
+
+        <div class="detail-image">
+
+            <img
+                src="image/produk3.jpg.jpg"
+                alt="Produk Premium 1"
+            >
+
+        </div>
+
+
+        <!-- INFORMASI PRODUK -->
+
+        <div class="detail-info">
+
+            <div class="rating">
+
+                ⭐⭐⭐⭐⭐
+
+                <span>
+                    4.9 (25 ulasan)
+                </span>
+
+            </div>
+
+
+            <h2>
+                Produk Premium 1
+            </h2>
+
+
+            <p class="detail-description">
+
+                Produk premium dengan kualitas terbaik.
+                Cocok digunakan untuk kebutuhan sehari-hari.
+                Desain modern, nyaman, dan tahan lama.
+
+            </p>
+
+
+            <div class="detail-price">
+
+                <span class="old-price">
+                    Rp 129.000
+                </span>
+
+                <strong>
+                    Rp 99.000
+                </strong>
+
+            </div>
+
+
+            <!-- PILIH WARNA -->
+
+            <label>
+                Pilih Warna
+            </label>
+
+            <div class="options">
+
+                <button
+                    class="option active">
+
+                    Hitam
+
+                </button>
+
+                <button
+                    class="option">
+
+                    Putih
+
+                </button>
+
+                <button
+                    class="option">
+
+                    Biru
+
+                </button>
+
+            </div>
+
+
+            <!-- PILIH UKURAN -->
+
+            <label>
+                Pilih Ukuran
+            </label>
+
+            <div class="options">
+
+                <button
+                    class="option active">
+
+                    S
+
+                </button>
+
+                <button
+                    class="option">
+
+                    M
+
+                </button>
+
+                <button
+                    class="option">
+
+                    L
+
+                </button>
+
+                <button
+                    class="option">
+
+                    XL
+
+                </button>
+
+            </div>
+
+
+            <!-- STOK -->
+
+            <p class="detail-stock">
+
+                🔥 Stok tersisa 12
+
+            </p>
+
+
+            <!-- BELI -->
+
+            <button
+                class="detail-buy-btn"
+                onclick="addProductFromDetail()">
+
+                🛒 Tambah ke Keranjang
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+ 
+ 
+    <script src="script.js"></script>
+
+</body>
+</html>
